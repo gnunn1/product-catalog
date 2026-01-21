@@ -1,0 +1,19 @@
+resources:
+- components/database/base
+- components/client/base
+- components/server/base
+
+replicas:
+- name: server
+  count: 2
+- name: client
+  count: 2
+
+# patches:
+# - patch: |-
+#     - op: replace
+#       path: "/spec/template/spec/containers/0/resources/limits/memory"
+#       value: 1Gi
+#   target:
+#     kind: Deployment
+#     name: server
