@@ -33,7 +33,7 @@ spec:
               value: "true"
             - name: QUARKUS_KUBERNETES_CONFIG_CONFIG_MAPS
               value: server
-          image: quay.io/gnunn/server:latest
+          image: quay.io/gnunn/server:1234
           imagePullPolicy: Always
           ports:
             - containerPort: 8080
